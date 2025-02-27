@@ -20,6 +20,11 @@ jobs:
         run: |
           npm install
 
+      - name: Install Playwright Browsers
+        run: |
+          npx playwright install
+  
+
       - name: Run Playwright Tests
         run: |
           npx playwright test playwright/tests/test.spec.ts
